@@ -1,0 +1,96 @@
+<!-- PAGE STRUCTURE -->
+
+	<template name="home">
+
+		<header class="col-xs-12 margin-bottom-10">
+			{{> project_header}}
+		</header>
+
+		<section class="col-xs-12 padding-top-10">
+			<article class="">
+				{{> grafica}}
+			</article>
+		</section>
+
+
+
+		<nav class="col-xs-12 padding5">
+			{{> project_navbars}}
+		</nav>
+
+	</template>
+
+<!-- END OF PAGE STRUCTURE -->
+
+
+
+
+
+<!-- PAGE CONTENTS -->
+
+	<!-- header -->
+		<template name="project_header">
+			<h2>My project: time by tasks</h2>
+		</template>
+	<!-- end of header -->
+
+
+	<!-- here goes the 'grafica' template, already placed above -->
+
+	<!-- navbars: 2 divs NOT shown at the same time (screensize determines which one is visible)-->
+		<template name="project_navbars">
+			<div class="hidden-xs">
+				<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <a href="/izquierda"><button type="button" class="btn btn-default">Left</button></a>
+  </div>
+  <div class="btn-group" role="group">
+    <a href="/centro"><button type="button" class="btn btn-default">Middle</button></a>
+  </div>
+  <div class="btn-group" role="group">
+    <a href="/derecha"><button type="button" class="btn btn-default">Right</button></a>
+  </div>
+</div>
+			</div>
+
+			<div class="visible-xs">
+				<div class="dropup">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="/izquierda">Left</a></li>
+    <li><a href="#">Middle</a></li>
+    <li><a href="/centro">Right</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="/derecha">This link is disabled</a></li>
+  </ul>
+</div>
+			</div>
+		</template>
+	<!-- end of navbars -->
+
+
+<!-- END OF PAGE CONTENTS -->
+
+
+
+
+
+
+
+
+
+<!--
+<template name="home">
+
+	<h2>Página principal de la web (info general)</h2>
+	<ul>
+		<li>Link al <a href="/dashboard">dashboard del usuario</a></li>
+		<li>Link a <a href="/myproject">la pagina del proyecto abierto</a></li>
+
+	</ul>
+
+</template>
+-->

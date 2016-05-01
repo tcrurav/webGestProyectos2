@@ -1,0 +1,40 @@
+<template name="layout">
+
+		<!-- PRE-HEADER: THIN BAR AT THE TOP OF THE SCREEN -->
+
+	<div class="100 padding5 margin-bottom-10 content-center bg-primary">
+		{{> main_pre_header}}
+	</div>
+	<!-- END OF PRE-HEADER: THIN BAR AT THE TOP OF THE SCREEN -->
+
+
+
+	<!-- MAIN BLOCK -->
+	<div class="container margin-bottom-10">
+
+		<!-- YIELD: where the subpages will load -->
+		<div class="col-xs-12 col-md-8 col-lg-9">
+				{{>yield}}
+		</div>
+		<!-- End of YIELD: where the subpages will load -->
+
+
+
+		<!-- Right side: aside -->
+		<aside class="col-xs-12 col-md-4 col-lg-3 padding-top-20">
+			{{> main_sidebar}}
+		</aside>
+		<!-- End of right side: aside -->
+
+	</div>
+	<!-- END OF MAIN BLOCK -->
+
+
+
+	<!-- FOOTER: THIN BAR AT THE BOTTOM
+	<footer class="bottomFixed sidesFixed 100 padding5 content-center bg-primary">
+		{{> main_footer}}
+	</footer>
+	 END OF FOOTER: THIN BAR AT THE BOTTOM -->
+
+</template>

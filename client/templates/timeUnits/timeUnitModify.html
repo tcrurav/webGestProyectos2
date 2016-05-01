@@ -1,0 +1,17 @@
+<template name="timeUnitEdit">
+
+	<form id="modifyTimeUnit" class="padding5 margin-bottom-10">
+		<label class="sr-only">Activity:</label>
+		<input name="activity" type="text" class="form-control form-group" value={{activity}}>
+		<label class="sr-only">Time (in minutes):</label>
+		<input name="minutes" type="text" class="form-control form-group" value={{minutes}}>
+	<div id="edit_form_error">Please enter a new value, must be above 0!!</div>
+		<select name="priority" class="form-control form-group" >
+			<option value="high">High priority</option>
+			<option value="medium">Medium priority</option>
+			<option value="low">Low priority</option>
+		</select>
+		<input class="form-group btn-block btn btn-primary" type="submit" value="Modify"/>
+	</form>
+
+</template>

@@ -1,0 +1,26 @@
+<template name="list_timeUnits">
+	<div id="timeUnitsView" class="visible">
+		<h4>Registered time units</h4>
+		{{#each timeUnits}}
+			<ul>
+				{{> timeUnit}}
+			</ul>
+		{{/each}}
+
+		{{#if adminOK}}
+		<form>
+			<input type="button" class="form-group btn-block btn btn-primary margin-bottom-10" id="editValues" value="Modify values"/>
+		</form>
+		{{/if}}
+	</div>
+
+	<div id="timeUnitsEdit" class="hidden">
+		<h4>Modify a time unit</h4>
+		{{#each timeUnits}}
+		<ul>
+			{{> timeUnitEdit}}
+		</ul>
+	{{/each}}
+	</div>
+
+</template>

@@ -1,0 +1,23 @@
+<!-- implementación de http://www.highcharts.com/blog/195-meteor-standalone -->
+<!-- salvo que no funcionó con meteor add highcharts:highcharts-meteor -->
+<!-- funcionó con meteor npm install --save highcharts -->
+<!-- previamente hay que instalar npm con apt-get install npm -->
+
+<template name="grafica">
+  <section class="row">
+    <article class="col-md-6">
+      <div id="chart-por-cantidad">{{graficaPorCantidadDeTareas}}</div>
+    </article>
+    <article class="col-md-6">
+      <div id="chart-por-minutos">{{graficaPorMinutosDeTareas}}</div>
+    </article>
+  </section>
+  <section class="row">
+    <article class="col-md-6">
+      <div id="chart-por-cantidad-3D"><!--{{graficaPorCantidadDeTareas3D}}--></div>
+    </article>
+    <article class="col-md-6">
+      <div id="chart-por-minutos-3D">{{graficaPorMinutosDeTareas3D}}</div>
+    </article>
+  </section>
+</template>

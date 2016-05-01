@@ -1,0 +1,93 @@
+/* BOX SIZE AND LOCATION */
+	.100 {
+		width: 100%;
+	}
+/* END OF BOX SIZE AND LOCATION */
+
+/* BOX BEHAVIORS*/
+	.inlineBlock {
+			display: inline-block;
+		}
+/* END OF BOX BEHAVIORS*/
+
+
+/* BOX  STYLES*/
+	/* Margins and paddings */
+		.padding5 {
+			padding: 5px;
+		}
+		.padding-top-20 {
+			padding-top: 20px;
+		}
+		.padding-top-40 {
+			padding-top: 40px;
+		}
+		.margin-bottom-10 {
+			margin-bottom: 10px;
+		}
+		.margin-bottom-40 {
+			margin-bottom: 40px;
+		}
+		.padding-left-100 {
+			padding-left: 100px;
+		}
+	/* End of argins and paddings */
+
+	/* Positions */
+		.bottomFixed {
+			position:absolute;bottom:0;
+		}
+		.sidesFixed {
+			position:absolute;left:0;right:0;
+		}
+
+	/* End of positions */
+/* END OF BOX  STYLES*/
+
+
+/* CONTENTS */
+	body {
+		font-family: 'Open Sans', sans-serif;
+	}
+	.content-center {
+		text-align: center;
+	}
+/* END OF CONTENTS */
+
+
+
+/* LITTLE RETOUCHES */
+	/* Code to keep the login buttons always visible, removing the dropdown
+		#login-screen .dropdown-menu {
+			display:block;
+				Aquí van las propiedades css del cajón donde están los botones
+		}
+		#login-screen #login-dropdown-list {
+			display:block; /* Esto es para que se vea siempre el menú de login
+		}
+		#login-screen a.dropdown-toggle {
+		display:none; /*  Esto es para que no aparezca el botón que abre el dropdown
+		}
+    	End of code to remove the dropdown */
+
+		#form_error {
+			display: none;
+		}
+		#edit_form_error {
+			display: none;
+		}
+		#addNews_form_error{
+			display: none;
+		}
+		#editNews_form_error{
+			display: none;
+		}
+
+	.bg-primary {
+		color: #333333;
+		background-color: #eeeeee;
+	}
+	.bg-primary a {
+		color:#990000;
+	}
+/* END OF LITTLE RETOUCHES */

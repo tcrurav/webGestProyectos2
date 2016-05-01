@@ -1,0 +1,57 @@
+<!-- pre-header -->
+	<template name="main_pre_header">
+		<div id="textoPreHeader" class="inlineBlock">
+			<img src="logoWeb.png" height="18">Projects time management: control your work time
+		</div>
+
+		<div id="login-screen" class="inlineBlock padding-left-100">
+			{{> loginButtons}}
+		</div>
+	</template>
+<!-- end of pre-header -->
+
+
+
+
+<!-- THIS SPACE IS FILLED BY THE YIELD, EACH SUBPAGE IS DIFFERENT -->
+
+
+
+
+<!-- aside -->
+	<template name="main_sidebar">
+
+
+		<div id="addNewTimes" class="margin-bottom-40">
+			{{#if currentUser}} <!-- formulario para anadir nuevo solo si se es usuario registrado-->
+					<h4>Add new time units</h4>
+					<form id="newTimeUnit" class="padding5">
+						<label class="sr-only">Activity:</label>
+						<input name="activity" type="text" class="form-control form-group" placeholder="What have you done?">
+						<label class="sr-only">Time (in minutes):</label>
+						<input name="minutes" type="text" class="form-control form-group" placeholder="Time in minutes">
+				<div id="form_error" >The minutes value must be above 0!!</div>
+						<select name="priority" class="form-control form-group" >
+							<option value="high">High priority</option>
+							<option value="medium">Medium priority</option>
+							<option value="low">Low priority</option>
+						</select>
+						<input class="form-group btn-block btn btn-primary" type="submit" value="Add it"/>
+					</form>
+			{{else}}
+				<div class="text-center"><a href="https://github.com/josealeman/gestProyectos" class="btn btn-info"><span class="glyphicon glyphicon-download-alt"></span> Download this project</a></div>
+			{{/if}}
+		</div>
+
+		<div id="timeUnitsSidebar">
+			{{> list_timeUnits}}
+		</div>
+
+	</template>
+<!-- end of aside -->
+
+<!-- footer -->
+	<template name="main_footer">
+		Web responsive-designed by <a target="blank" href="http://mandelrot.com">Mandelrot</a>, 2016
+	</template>
+<!-- end of footer -->
